@@ -1,1 +1,6 @@
 # Dependências do projeto Python
+# fastapi
+# uvicorn
+# sqlalchemy
+# httpx
+# pydantic
