@@ -7,8 +7,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
 from backend.banco_dados import BaseModel, motor_banco, obter_banco
-from backend.modelos import AgendamentoCriar, AgendamentoResposta
-from backend.esquemas1 import AgendamentoModelo
+from backend.esquemas import AgendamentoCriar, AgendamentoResposta
+from backend.modelos import AgendamentoModelo
 from backend.servico_feriados import verificar_se_e_feriado
 
 # Inicializa as tabelas no SQLite caso não existam
