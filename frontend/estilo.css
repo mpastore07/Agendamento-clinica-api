@@ -1,0 +1,110 @@
+/* Estilos para a página de agendamento */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a73e8;
+}
+
+.cartao {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e8eaed;
+    padding-bottom: 5px;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input, button {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+.grade-horarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botao-horario {
+    background-color: #e8f0fe;
+    color: #1967d2;
+    border: 1px solid #aecbfa;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.botao-horario.selecionado {
+    background-color: #34a853;
+    color: white;
+    border-color: #2d9248;
+}
+
+.escondido {
+    display: none;
+}
+
+.mensagem {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-left: 4px solid #1a73e8;
+    margin-bottom: 8px;
+}
