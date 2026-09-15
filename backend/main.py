@@ -1,4 +1,4 @@
-# Inicialização do servidor FastAPI
+# Inicialização do servidor FastAPI.
 
 from datetime import datetime
 from typing import List
