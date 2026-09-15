@@ -1,0 +1,49 @@
+ <!-- Página inicial do frontend -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento da Clínica</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Consultas</h1>
+        
+        <!-- Formulário de Seleção de Data e Horários -->
+        <section class="cartao">
+            <h2>1. Escolha a Data</h2>
+            <div class="campo-grupo">
+                <label for="campo-data">Data da Consulta:</label>
+                <input type="date" id="campo-data">
+                <button id="btn-buscar">Buscar Horários</button>
+            </div>
+            <p id="mensagem-status" class="mensagem"></p>
+
+            <div id="secao-horarios" class="escondido">
+                <h3>2. Selecione o Horário Disponível</h3>
+                <div id="grade-horarios" class="grade-horarios"></div>
+            </div>
+
+            <div id="secao-confirmacao" class="escondido">
+                <h3>3. Identificação do Paciente</h3>
+                <div class="campo-grupo">
+                    <label for="campo-nome">Nome do Paciente:</label>
+                    <input type="text" id="campo-nome" placeholder="Digite seu nome completo">
+                    <button id="btn-confirmar">Confirmar Agendamento</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lista de Agendamentos Cadastrados -->
+        <section class="cartao">
+            <h2>Agendamentos Confirmados</h2>
+            <ul id="lista-agendamentos"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
