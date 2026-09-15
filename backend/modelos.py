@@ -1,4 +1,4 @@
-# Modelo da tabela de agendamentos no banco:
+# Modelo da tabela de agendamentos no banco.
 
 from sqlalchemy import Column, Integer, String
 from backend.banco_dados import BaseModel
